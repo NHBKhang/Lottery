@@ -25,9 +25,10 @@ namespace Lottery
 
         private void btReturn_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
             this.Hide();
+            Form1 f1 = new Form1();
+            f1.FormClosed += (s, args) => this.Close();
+            f1.Show();        
         }
 
         private void btClose_Click(object sender, EventArgs e)
@@ -36,14 +37,33 @@ namespace Lottery
             Application.Exit();
         }
 
-        private void GetPlayerNumber()
+        private int[] GetPlayerNumber()
         {
-
-
+            int[] cacSo = new int[6];
+            try
+            {
+                cacSo[0] = Convert.ToInt16(textBox1.Text);
+                cacSo[1] = Convert.ToInt16(textBox2.Text);
+                cacSo[2] = Convert.ToInt16(textBox3.Text);
+                cacSo[3] = Convert.ToInt16(textBox4.Text);
+                cacSo[4] = Convert.ToInt16(textBox5.Text);
+                cacSo[5] = Convert.ToInt16(textBox6.Text);
+            } catch (Exception ex)
+            {
+                string error = String.Format(" Error {0}", ex.Message);
+                MessageBox.Show("Wrong input." + error, "Input error");
+            }
+            return cacSo;
         }
 
         private void btChot_Click(object sender, EventArgs e)
         {
+            //tăng giá giải thưởng
+            GiaiThuong.inc();
+
+            //lấy 6 số đã nhập
+            int[] soChon = new int[6];
+            soChon = GetPlayerNumber();
 
         }
 
@@ -56,6 +76,12 @@ namespace Lottery
             textBox4.Text = random.Next(1, 50).ToString();
             textBox5.Text = random.Next(1, 50).ToString();
             textBox6.Text = random.Next(1, 50).ToString();
+        }
+
+        private void BtHistory_Click(object sender, EventArgs e)
+        {
+            FHistory fHistory = new FHistory();
+            fHistory.Show();
         }
     }
 }

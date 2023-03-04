@@ -20,3 +20,15 @@ D:\GUI\GUI-programming-main\Lottery(INCOMPL)\Lottery(INCOMPL)\obj\Debug\Lottery.
 D:\GUI\GUI-programming-main\Lottery(INCOMPL)\Lottery(INCOMPL)\bin\Debug\Lottery.exe.config
 D:\GUI\GUI-programming-main\Lottery(INCOMPL)\Lottery(INCOMPL)\bin\Debug\Lottery.exe
 D:\GUI\GUI-programming-main\Lottery(INCOMPL)\Lottery(INCOMPL)\bin\Debug\Lottery.pdb
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.exe.config
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.exe
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.pdb
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Form1.resources
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Form2.resources
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Properties.Resources.resources
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.GenerateResource.cache
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.CoreCompileInputs.cache
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.exe
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.pdb
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FCongrat.resources
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FHistory.resources

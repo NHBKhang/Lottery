@@ -65,6 +65,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btClose = new System.Windows.Forms.Button();
+            this.BtHistory = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -433,6 +434,17 @@
             this.btClose.UseVisualStyleBackColor = true;
             this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
+            // BtHistory
+            // 
+            this.BtHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtHistory.Location = new System.Drawing.Point(411, 513);
+            this.BtHistory.Name = "BtHistory";
+            this.BtHistory.Size = new System.Drawing.Size(84, 41);
+            this.BtHistory.TabIndex = 4;
+            this.BtHistory.Text = "Nhật ký";
+            this.BtHistory.UseVisualStyleBackColor = true;
+            this.BtHistory.Click += new System.EventHandler(this.BtHistory_Click);
+            // 
             // Form2
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -442,6 +454,7 @@
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(906, 562);
             this.Controls.Add(this.btClose);
+            this.Controls.Add(this.BtHistory);
             this.Controls.Add(this.btReturn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label23);
@@ -523,5 +536,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Button btRandomTicket;
+        private System.Windows.Forms.Button BtHistory;
     }
 }

@@ -19,10 +19,10 @@ namespace Lottery
 
         private void btStart_Click(object sender, EventArgs e)
         {
-            Form2 f2= new Form2();
-            f2.Show();
             this.Hide();
-            
+            Form2 f2= new Form2();
+            f2.FormClosed += (s, args) => this.Close();
+            f2.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
