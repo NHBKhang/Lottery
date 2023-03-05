@@ -14,6 +14,7 @@ namespace Lottery
         protected int so4;
         protected int so5;
         protected int so6;
+        protected const string path = @"..\..\Data";
 
         protected XoSo()
         {
