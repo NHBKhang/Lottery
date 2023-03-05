@@ -59,6 +59,7 @@
     <Compile Include="History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
+    <Compile Include="Scripts\PlayerNum.cs" />
     <Compile Include="Scripts\VeBaSo.cs" />
     <Compile Include="Scripts\XoSo.cs" />
     <Compile Include="Form1.cs">
@@ -109,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

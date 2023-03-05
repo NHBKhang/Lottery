@@ -32,3 +32,4 @@ D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.exe
 D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.pdb
 D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FCongrat.resources
 D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FHistory.resources
+D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.AssemblyReference.cache

@@ -37,7 +37,7 @@ namespace Lottery
             Application.Exit();
         }
 
-        private int[] GetPlayerNumber()
+        private PlayerNum GetPlayerNumber()
         {
             int[] cacSo = new int[6];
             try
@@ -53,7 +53,7 @@ namespace Lottery
                 string error = String.Format(" Error {0}", ex.Message);
                 MessageBox.Show("Wrong input." + error, "Input error");
             }
-            return cacSo;
+            return new PlayerNum(cacSo[0], cacSo[1], cacSo[2], cacSo[3], cacSo[4], cacSo[5]);
         }
 
         private void btChot_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace Lottery
 
             //lấy 6 số đã nhập
             int[] soChon = new int[6];
-            soChon = GetPlayerNumber();
+            PlayerNum playerNum = GetPlayerNumber();
 
         }
 
@@ -82,6 +82,12 @@ namespace Lottery
         {
             FHistory fHistory = new FHistory();
             fHistory.Show();
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+            PlayerNum playerNum = GetPlayerNumber();
+            playerNum.AccessFile(false);
         }
     }
 }

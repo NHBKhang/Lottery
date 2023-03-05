@@ -66,6 +66,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btClose = new System.Windows.Forms.Button();
             this.BtHistory = new System.Windows.Forms.Button();
+            this.btSave = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -294,6 +295,7 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.btRandomTicket);
+            this.groupBox1.Controls.Add(this.btSave);
             this.groupBox1.Controls.Add(this.btChot);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(37, 373);
@@ -445,6 +447,16 @@
             this.BtHistory.UseVisualStyleBackColor = true;
             this.BtHistory.Click += new System.EventHandler(this.BtHistory_Click);
             // 
+            // btSave
+            // 
+            this.btSave.Location = new System.Drawing.Point(720, 56);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(84, 41);
+            this.btSave.TabIndex = 4;
+            this.btSave.Text = "Lưu";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
+            // 
             // Form2
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -537,5 +549,6 @@
         private System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Button btRandomTicket;
         private System.Windows.Forms.Button BtHistory;
+        private System.Windows.Forms.Button btSave;
     }
 }
