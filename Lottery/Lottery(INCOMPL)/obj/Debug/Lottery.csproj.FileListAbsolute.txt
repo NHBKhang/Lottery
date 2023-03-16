@@ -33,3 +33,17 @@ D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.pdb
 D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FCongrat.resources
 D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FHistory.resources
 D:\GUI\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.AssemblyReference.cache
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.exe.config
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.exe
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.pdb
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.AssemblyReference.cache
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.SuggestedBindingRedirects.cache
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FCongrat.resources
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Form1.resources
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Form2.resources
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FHistory.resources
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Properties.Resources.resources
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.GenerateResource.cache
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.CoreCompileInputs.cache
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.exe
+D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.pdb

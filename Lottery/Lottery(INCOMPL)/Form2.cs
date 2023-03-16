@@ -129,17 +129,17 @@ namespace Lottery
                             giai = Giai.KhongGiai;
                             isWinning = false;
                         }
+                        
                     }
                 }
-                    
+                
             }
-
             isWinning = true;
             giai = Giai.GiaiDacBiet;
             if (isWinning)
             {
                 FCongrat fCongrat = new FCongrat();
-                fCongrat.Show();
+                fCongrat.ShowDialog();
             }
         }
 
