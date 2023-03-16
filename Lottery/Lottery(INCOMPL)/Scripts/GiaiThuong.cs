@@ -6,32 +6,43 @@ using System.Threading.Tasks;
 
 namespace Lottery
 {
-    class GiaiThuong
+    public enum Giai
     {
-        enum Giai
+        GiaiBa,
+        GiaiNhi,
+        GiaiNhat,
+        GiaiDacBiet,
+        KhongGiai
+    }
+    static class GiaiThuong
+    {
+
+        private static string[] tenGiai = {"giải ba", "giải nhì", "giải nhất", "giải đặc biệt"};
+        private static long[] tienThuong = {100000, 500000, 1000000, 10000000 };
+        
+        public static long TienThuong(int viTri)
         {
-            GiaiBa,
-            GiaiNhi,
-            GiaiNhat,
-            GiaiDacBiet
+            return tienThuong[viTri];
         }
-        private static long tienThuong = 10000000;
-        public static long TienThuong
+        public static void ResetTienThuong()
         {
-            get { return tienThuong; }
-            set { tienThuong = value; }
-        }
-        public GiaiThuong()
-        {
-            tienThuong = 10000000;
+            tienThuong[(int)Giai.GiaiDacBiet] = 10000000;
         }
         public static void inc()
         {
-            tienThuong += 100000;
+            tienThuong[(int) Giai.GiaiDacBiet] += 100000;
         }
         public static string FormatPrice(long tienThuong)
         {
             return String.Format("{0:N0}đ", tienThuong);
+        }
+        public static string GetTenGiai(Giai giai)
+        {
+            return tenGiai[(int)giai];
+        }
+        public static long GetTienThuongGiai(Giai giai)
+        {
+            return tienThuong[(int)giai];
         }
     }
 }

@@ -27,7 +27,10 @@ namespace Lottery
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label6.Text += GiaiThuong.FormatPrice(GiaiThuong.TienThuong);
+            label3.Text += GiaiThuong.FormatPrice(GiaiThuong.TienThuong(0));
+            label4.Text += GiaiThuong.FormatPrice(GiaiThuong.TienThuong(1));
+            label5.Text += GiaiThuong.FormatPrice(GiaiThuong.TienThuong(2));
+            label6.Text += GiaiThuong.FormatPrice(GiaiThuong.TienThuong(3));
         }
     }
 }

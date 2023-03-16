@@ -79,7 +79,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(205, 29);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Giải ba: 100,000đ";
+            this.label3.Text = "Giải ba: ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
@@ -90,7 +90,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(205, 29);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Giải nhì: 500,000đ";
+            this.label4.Text = "Giải nhì: ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
@@ -101,7 +101,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(260, 29);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Giải nhất: 1,000.000đ";
+            this.label5.Text = "Giải nhất: ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6

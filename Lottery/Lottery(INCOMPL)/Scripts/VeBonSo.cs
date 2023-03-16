@@ -6,32 +6,39 @@ using System.Threading.Tasks;
 
 namespace Lottery
 {
-    class VeBaSo : XoSo
+    class VeBonSo : VeBaSo
     {
         private string url;
 
 
-        public VeBaSo()
-        {
+        public VeBonSo()
+        { 
             so1 = random.Next(1, 50);
             so2 = random.Next(1, 50);
             so3 = random.Next(1, 50);
+            so4 = random.Next(1, 50);
         }
-        public VeBaSo(int so1, int so2, int so3)
+        public VeBonSo(int so1, int so2, int so3, int so4)
         {
             this.so1 = so1;
             this.so2 = so2;
             this.so3 = so3;
+            this.so4 = so4;
         }
-        public bool ComparePlayerNum(PlayerNum playerNum)
+        public new bool ComparePlayerNum(PlayerNum playerNum)
         {
-            if (playerNum.So6 == this.so3)
+            if (playerNum.So6 == this.so4)
             {
-                if (playerNum.So5 == this.so2)
+                if (playerNum.So5 == this.so3)
                 {
-                    if (playerNum.So4 == this.so1)
+                    if (playerNum.So4 == this.so2)
                     {
-
+                        if (playerNum.So4 == this.so1)
+                        {
+                            return true;
+                        }
+                        else
+                            return false;
                     }
                     else
                         return false;
@@ -41,9 +48,6 @@ namespace Lottery
             }
             else
                 return false;
-            
-            return true;
         }
-
     }
 }

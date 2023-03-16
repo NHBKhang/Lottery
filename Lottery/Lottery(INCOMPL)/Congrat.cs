@@ -17,5 +17,11 @@ namespace Lottery
             InitializeComponent();
         }
 
+        private void FCongrat_Load(object sender, EventArgs e)
+        {
+            lbGiai.Text += GiaiThuong.GetTenGiai(Form2.giai);
+            lbMoney.Text = GiaiThuong.FormatPrice(GiaiThuong.GetTienThuongGiai(Form2.giai));
+            GiaiThuong.ResetTienThuong();
+        }
     }
 }

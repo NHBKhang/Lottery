@@ -61,6 +61,9 @@
     </Compile>
     <Compile Include="Scripts\PlayerNum.cs" />
     <Compile Include="Scripts\VeBaSo.cs" />
+    <Compile Include="Scripts\VeBonSo.cs" />
+    <Compile Include="Scripts\VeNamSo.cs" />
+    <Compile Include="Scripts\VeSauSo.cs" />
     <Compile Include="Scripts\XoSo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

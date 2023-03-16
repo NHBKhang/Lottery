@@ -51,11 +51,11 @@ namespace Lottery
             // 
             this.lbGiai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGiai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbGiai.Location = new System.Drawing.Point(178, 79);
+            this.lbGiai.Location = new System.Drawing.Point(117, 79);
             this.lbGiai.Name = "lbGiai";
-            this.lbGiai.Size = new System.Drawing.Size(146, 37);
+            this.lbGiai.Size = new System.Drawing.Size(253, 37);
             this.lbGiai.TabIndex = 1;
-            this.lbGiai.Text = "Giải";
+            this.lbGiai.Text = "Xổ số ";
             this.lbGiai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbMoney
@@ -93,8 +93,9 @@ namespace Lottery
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "FCongrat";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chúc mừng";
+            this.Load += new System.EventHandler(this.FCongrat_Load);
             this.ResumeLayout(false);
 
         }
