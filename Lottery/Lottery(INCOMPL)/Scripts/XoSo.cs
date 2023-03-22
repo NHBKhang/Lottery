@@ -41,6 +41,10 @@ namespace Lottery
         {
             get { return so6; }
         }
+        public string Date
+        {
+            get { return date; }
+        }
         protected XoSo()
         {
             so1 = so2 = so3 = so4 = so5 = so6 = 0;

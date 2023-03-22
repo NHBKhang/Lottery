@@ -62,6 +62,9 @@ namespace Lottery
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btPPrev = new System.Windows.Forms.Button();
+            this.btPNext = new System.Windows.Forms.Button();
+            this.lbDate = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +76,7 @@ namespace Lottery
             this.lbMoney.ForeColor = System.Drawing.Color.Gold;
             this.lbMoney.Location = new System.Drawing.Point(-24, -44);
             this.lbMoney.Name = "lbMoney";
-            this.lbMoney.Size = new System.Drawing.Size(85, 32);
+            this.lbMoney.Size = new System.Drawing.Size(86, 32);
             this.lbMoney.TabIndex = 32;
             this.lbMoney.Text = "Tiền: ";
             // 
@@ -371,14 +374,16 @@ namespace Lottery
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Yellow;
+            this.groupBox1.Controls.Add(this.btPNext);
             this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.btPPrev);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(12, 318);
+            this.groupBox1.Location = new System.Drawing.Point(17, 365);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(736, 100);
             this.groupBox1.TabIndex = 33;
@@ -388,21 +393,56 @@ namespace Lottery
             // 
             this.button2.BackgroundImage = global::Lottery.Properties.Resources.right;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(633, 442);
+            this.button2.Location = new System.Drawing.Point(637, 305);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 37);
             this.button2.TabIndex = 34;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.BackgroundImage = global::Lottery.Properties.Resources.left;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(36, 442);
+            this.button1.Location = new System.Drawing.Point(59, 305);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 37);
             this.button1.TabIndex = 34;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btPPrev
+            // 
+            this.btPPrev.BackgroundImage = global::Lottery.Properties.Resources.left;
+            this.btPPrev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btPPrev.Location = new System.Drawing.Point(694, 16);
+            this.btPPrev.Name = "btPPrev";
+            this.btPPrev.Size = new System.Drawing.Size(36, 28);
+            this.btPPrev.TabIndex = 34;
+            this.btPPrev.UseVisualStyleBackColor = true;
+            this.btPPrev.Click += new System.EventHandler(this.btPPrev_Click);
+            // 
+            // btPNext
+            // 
+            this.btPNext.BackgroundImage = global::Lottery.Properties.Resources.right;
+            this.btPNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btPNext.Location = new System.Drawing.Point(694, 50);
+            this.btPNext.Name = "btPNext";
+            this.btPNext.Size = new System.Drawing.Size(36, 28);
+            this.btPNext.TabIndex = 34;
+            this.btPNext.UseVisualStyleBackColor = true;
+            this.btPNext.Click += new System.EventHandler(this.btPNext_Click);
+            // 
+            // lbDate
+            // 
+            this.lbDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.Aqua;
+            this.lbDate.Location = new System.Drawing.Point(252, 305);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(267, 37);
+            this.lbDate.TabIndex = 24;
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FHistory
             // 
@@ -418,6 +458,7 @@ namespace Lottery
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
+            this.Controls.Add(this.lbDate);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.lb35);
             this.Controls.Add(this.lb34);
@@ -440,6 +481,7 @@ namespace Lottery
             this.MaximizeBox = false;
             this.Name = "FHistory";
             this.Text = "History";
+            this.Load += new System.EventHandler(this.FHistory_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -481,5 +523,8 @@ namespace Lottery
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btPNext;
+        private System.Windows.Forms.Button btPPrev;
+        private System.Windows.Forms.Label lbDate;
     }
 }

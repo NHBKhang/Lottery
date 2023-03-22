@@ -22,6 +22,7 @@ namespace Lottery
         private void Form2_Load(object sender, EventArgs e)
         {
             lbMoney.Text += GiaiThuong.FormatPrice(Program.currentMoney);
+            lbDate.Text = DateTime.Today.ToString().Split(' ')[0];
         }
 
         private void btReturn_Click(object sender, EventArgs e)
@@ -163,7 +164,98 @@ namespace Lottery
         private void btSave_Click(object sender, EventArgs e)
         {
             PlayerNum playerNum = GetPlayerNumber();
-            playerNum.AccessFile(false);
+            if (playerNum == null)
+                return;
+            playerNum.AppendFile();
+        }
+
+        private void btSaveResult_Click(object sender, EventArgs e)
+        {
+            VeBaSo veBaSo = GetVeBaSo();
+            VeBonSo veBonSo = GetVeBonSo();
+            VeNamSo veNamSo = GetVeNamSo();
+            VeSauSo veSauSo = GetVeSauSo();
+            if (veBaSo != null && veBonSo != null && veNamSo != null && veSauSo != null)
+            {
+                veBaSo.AppendFile();
+                veBonSo.AppendFile();
+                veNamSo.AppendFile();
+                veSauSo.AppendFile();
+            }
+        }
+        private VeBaSo GetVeBaSo()
+        {
+            int[] cacSo = new int[3];
+            try
+            {
+                cacSo[0] = Convert.ToInt16(lb11.Text);
+                cacSo[1] = Convert.ToInt16(lb12.Text);
+                cacSo[2] = Convert.ToInt16(lb13.Text);
+                return new VeBaSo(lbDate.Text ,cacSo[0], cacSo[1], cacSo[2]);
+            }
+            catch (Exception ex)
+            {
+                string error = String.Format(" Error {0}", ex.Message);
+                MessageBox.Show("Wrong input." + error, "Input error");
+                return null;
+            }
+        }
+        private VeBonSo GetVeBonSo()
+        {
+            int[] cacSo = new int[4];
+            try
+            {
+                cacSo[0] = Convert.ToInt16(lb21.Text);
+                cacSo[1] = Convert.ToInt16(lb22.Text);
+                cacSo[2] = Convert.ToInt16(lb23.Text);
+                cacSo[3] = Convert.ToInt16(lb24.Text);
+                return new VeBonSo(lbDate.Text, cacSo[0], cacSo[1], cacSo[2], cacSo[3]);
+            }
+            catch (Exception ex)
+            {
+                string error = String.Format(" Error {0}", ex.Message);
+                MessageBox.Show("Wrong input." + error, "Input error");
+                return null;
+            }
+        }
+        private VeNamSo GetVeNamSo()
+        {
+            int[] cacSo = new int[5];
+            try
+            {
+                cacSo[0] = Convert.ToInt16(lb31.Text);
+                cacSo[1] = Convert.ToInt16(lb32.Text);
+                cacSo[2] = Convert.ToInt16(lb33.Text);
+                cacSo[3] = Convert.ToInt16(lb34.Text);
+                cacSo[4] = Convert.ToInt16(lb35.Text);
+                return new VeNamSo(lbDate.Text, cacSo[0], cacSo[1], cacSo[2], cacSo[3], cacSo[4]);
+            }
+            catch (Exception ex)
+            {
+                string error = String.Format(" Error {0}", ex.Message);
+                MessageBox.Show("Wrong input." + error, "Input error");
+                return null;
+            }
+        }
+        private VeSauSo GetVeSauSo()
+        {
+            int[] cacSo = new int[6];
+            try
+            {
+                cacSo[0] = Convert.ToInt16(lb41.Text);
+                cacSo[1] = Convert.ToInt16(lb42.Text);
+                cacSo[2] = Convert.ToInt16(lb43.Text);
+                cacSo[3] = Convert.ToInt16(lb44.Text);
+                cacSo[4] = Convert.ToInt16(lb45.Text);
+                cacSo[5] = Convert.ToInt16(lb46.Text);
+                return new VeSauSo(lbDate.Text, cacSo[0], cacSo[1], cacSo[2],cacSo[3], cacSo[4], cacSo[5]);
+            }
+            catch (Exception ex)
+            {
+                string error = String.Format(" Error {0}", ex.Message);
+                MessageBox.Show("Wrong input." + error, "Input error");
+                return null;
+            }
         }
     }
 }

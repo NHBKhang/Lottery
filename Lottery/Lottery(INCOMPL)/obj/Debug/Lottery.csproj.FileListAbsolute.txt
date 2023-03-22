@@ -47,3 +47,16 @@ D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\
 D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.CoreCompileInputs.cache
 D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.exe
 D:\CODE\.Net\GUI-programming-main\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.pdb
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.exe.config
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.exe
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\bin\Debug\Lottery.pdb
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.AssemblyReference.cache
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FCongrat.resources
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Form1.resources
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Form2.resources
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.FHistory.resources
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.Properties.Resources.resources
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.GenerateResource.cache
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.csproj.CoreCompileInputs.cache
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.exe
+C:\Users\KHANG\Downloads\GUI-programming-main\Lottery\Lottery(INCOMPL)\obj\Debug\Lottery.pdb

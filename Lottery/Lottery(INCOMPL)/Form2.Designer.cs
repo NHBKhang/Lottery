@@ -64,6 +64,8 @@
             this.btClose = new System.Windows.Forms.Button();
             this.BtHistory = new System.Windows.Forms.Button();
             this.lbMoney = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
+            this.btSaveResult = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +73,7 @@
             // 
             this.lb11.BackColor = System.Drawing.Color.White;
             this.lb11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb11.Location = new System.Drawing.Point(242, 60);
+            this.lb11.Location = new System.Drawing.Point(209, 62);
             this.lb11.Name = "lb11";
             this.lb11.Size = new System.Drawing.Size(61, 51);
             this.lb11.TabIndex = 0;
@@ -81,7 +83,7 @@
             // 
             this.lb12.BackColor = System.Drawing.Color.White;
             this.lb12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb12.Location = new System.Drawing.Point(328, 60);
+            this.lb12.Location = new System.Drawing.Point(295, 62);
             this.lb12.Name = "lb12";
             this.lb12.Size = new System.Drawing.Size(61, 51);
             this.lb12.TabIndex = 0;
@@ -91,7 +93,7 @@
             // 
             this.lb13.BackColor = System.Drawing.Color.White;
             this.lb13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb13.Location = new System.Drawing.Point(417, 60);
+            this.lb13.Location = new System.Drawing.Point(384, 62);
             this.lb13.Name = "lb13";
             this.lb13.Size = new System.Drawing.Size(61, 51);
             this.lb13.TabIndex = 0;
@@ -101,7 +103,7 @@
             // 
             this.lb31.BackColor = System.Drawing.Color.White;
             this.lb31.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb31.Location = new System.Drawing.Point(242, 206);
+            this.lb31.Location = new System.Drawing.Point(209, 208);
             this.lb31.Name = "lb31";
             this.lb31.Size = new System.Drawing.Size(61, 51);
             this.lb31.TabIndex = 0;
@@ -111,7 +113,7 @@
             // 
             this.lb32.BackColor = System.Drawing.Color.White;
             this.lb32.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb32.Location = new System.Drawing.Point(330, 206);
+            this.lb32.Location = new System.Drawing.Point(297, 208);
             this.lb32.Name = "lb32";
             this.lb32.Size = new System.Drawing.Size(61, 51);
             this.lb32.TabIndex = 0;
@@ -121,7 +123,7 @@
             // 
             this.lb33.BackColor = System.Drawing.Color.White;
             this.lb33.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb33.Location = new System.Drawing.Point(418, 206);
+            this.lb33.Location = new System.Drawing.Point(385, 208);
             this.lb33.Name = "lb33";
             this.lb33.Size = new System.Drawing.Size(61, 51);
             this.lb33.TabIndex = 0;
@@ -131,7 +133,7 @@
             // 
             this.lb34.BackColor = System.Drawing.Color.White;
             this.lb34.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb34.Location = new System.Drawing.Point(506, 206);
+            this.lb34.Location = new System.Drawing.Point(473, 208);
             this.lb34.Name = "lb34";
             this.lb34.Size = new System.Drawing.Size(61, 51);
             this.lb34.TabIndex = 0;
@@ -141,7 +143,7 @@
             // 
             this.lb35.BackColor = System.Drawing.Color.White;
             this.lb35.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb35.Location = new System.Drawing.Point(593, 202);
+            this.lb35.Location = new System.Drawing.Point(560, 204);
             this.lb35.Name = "lb35";
             this.lb35.Size = new System.Drawing.Size(61, 51);
             this.lb35.TabIndex = 0;
@@ -151,7 +153,7 @@
             // 
             this.lb41.BackColor = System.Drawing.Color.White;
             this.lb41.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb41.Location = new System.Drawing.Point(242, 279);
+            this.lb41.Location = new System.Drawing.Point(209, 281);
             this.lb41.Name = "lb41";
             this.lb41.Size = new System.Drawing.Size(61, 51);
             this.lb41.TabIndex = 0;
@@ -161,7 +163,7 @@
             // 
             this.lb42.BackColor = System.Drawing.Color.White;
             this.lb42.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb42.Location = new System.Drawing.Point(330, 279);
+            this.lb42.Location = new System.Drawing.Point(297, 281);
             this.lb42.Name = "lb42";
             this.lb42.Size = new System.Drawing.Size(61, 51);
             this.lb42.TabIndex = 0;
@@ -171,7 +173,7 @@
             // 
             this.lb43.BackColor = System.Drawing.Color.White;
             this.lb43.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb43.Location = new System.Drawing.Point(418, 279);
+            this.lb43.Location = new System.Drawing.Point(385, 281);
             this.lb43.Name = "lb43";
             this.lb43.Size = new System.Drawing.Size(61, 51);
             this.lb43.TabIndex = 0;
@@ -181,7 +183,7 @@
             // 
             this.lb44.BackColor = System.Drawing.Color.White;
             this.lb44.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb44.Location = new System.Drawing.Point(506, 279);
+            this.lb44.Location = new System.Drawing.Point(473, 281);
             this.lb44.Name = "lb44";
             this.lb44.Size = new System.Drawing.Size(61, 51);
             this.lb44.TabIndex = 0;
@@ -191,7 +193,7 @@
             // 
             this.lb45.BackColor = System.Drawing.Color.White;
             this.lb45.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb45.Location = new System.Drawing.Point(594, 275);
+            this.lb45.Location = new System.Drawing.Point(561, 277);
             this.lb45.Name = "lb45";
             this.lb45.Size = new System.Drawing.Size(61, 51);
             this.lb45.TabIndex = 0;
@@ -201,7 +203,7 @@
             // 
             this.lb46.BackColor = System.Drawing.Color.White;
             this.lb46.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb46.Location = new System.Drawing.Point(682, 275);
+            this.lb46.Location = new System.Drawing.Point(649, 277);
             this.lb46.Name = "lb46";
             this.lb46.Size = new System.Drawing.Size(61, 51);
             this.lb46.TabIndex = 0;
@@ -211,7 +213,7 @@
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label20.Location = new System.Drawing.Point(57, 74);
+            this.label20.Location = new System.Drawing.Point(43, 76);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(100, 23);
             this.label20.TabIndex = 1;
@@ -221,7 +223,7 @@
             // 
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label21.Location = new System.Drawing.Point(57, 147);
+            this.label21.Location = new System.Drawing.Point(43, 149);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(125, 23);
             this.label21.TabIndex = 1;
@@ -231,7 +233,7 @@
             // 
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label22.Location = new System.Drawing.Point(57, 220);
+            this.label22.Location = new System.Drawing.Point(43, 222);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(125, 23);
             this.label22.TabIndex = 1;
@@ -241,7 +243,7 @@
             // 
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label23.Location = new System.Drawing.Point(57, 293);
+            this.label23.Location = new System.Drawing.Point(43, 295);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(153, 23);
             this.label23.TabIndex = 1;
@@ -361,7 +363,7 @@
             // 
             this.lb21.BackColor = System.Drawing.Color.White;
             this.lb21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb21.Location = new System.Drawing.Point(242, 133);
+            this.lb21.Location = new System.Drawing.Point(209, 135);
             this.lb21.Name = "lb21";
             this.lb21.Size = new System.Drawing.Size(61, 51);
             this.lb21.TabIndex = 0;
@@ -371,7 +373,7 @@
             // 
             this.lb22.BackColor = System.Drawing.Color.White;
             this.lb22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb22.Location = new System.Drawing.Point(328, 133);
+            this.lb22.Location = new System.Drawing.Point(295, 135);
             this.lb22.Name = "lb22";
             this.lb22.Size = new System.Drawing.Size(61, 51);
             this.lb22.TabIndex = 0;
@@ -381,7 +383,7 @@
             // 
             this.lb23.BackColor = System.Drawing.Color.White;
             this.lb23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb23.Location = new System.Drawing.Point(417, 133);
+            this.lb23.Location = new System.Drawing.Point(384, 135);
             this.lb23.Name = "lb23";
             this.lb23.Size = new System.Drawing.Size(61, 51);
             this.lb23.TabIndex = 0;
@@ -391,7 +393,7 @@
             // 
             this.lb24.BackColor = System.Drawing.Color.White;
             this.lb24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb24.Location = new System.Drawing.Point(506, 133);
+            this.lb24.Location = new System.Drawing.Point(473, 135);
             this.lb24.Name = "lb24";
             this.lb24.Size = new System.Drawing.Size(61, 51);
             this.lb24.TabIndex = 0;
@@ -431,6 +433,27 @@
             this.lbMoney.TabIndex = 5;
             this.lbMoney.Text = "Tiền: ";
             // 
+            // lbDate
+            // 
+            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbDate.Location = new System.Drawing.Point(715, 15);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(154, 32);
+            this.lbDate.TabIndex = 1;
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btSaveResult
+            // 
+            this.btSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSaveResult.Location = new System.Drawing.Point(735, 277);
+            this.btSaveResult.Name = "btSaveResult";
+            this.btSaveResult.Size = new System.Drawing.Size(134, 51);
+            this.btSaveResult.TabIndex = 4;
+            this.btSaveResult.Text = "Lưu kết quả";
+            this.btSaveResult.UseVisualStyleBackColor = true;
+            this.btSaveResult.Click += new System.EventHandler(this.btSaveResult_Click);
+            // 
             // Form2
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -446,7 +469,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
+            this.Controls.Add(this.btSaveResult);
             this.Controls.Add(this.label21);
+            this.Controls.Add(this.lbDate);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.lb35);
             this.Controls.Add(this.lb34);
@@ -518,5 +543,7 @@
         private System.Windows.Forms.Button BtHistory;
         private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Label lbMoney;
+        private System.Windows.Forms.Label lbDate;
+        private System.Windows.Forms.Button btSaveResult;
     }
 }
