@@ -18,7 +18,7 @@ namespace Lottery
     {
 
         private static string[] tenGiai = {"giải ba", "giải nhì", "giải nhất", "giải đặc biệt"};
-        private static long[] tienThuong = {100000, 500000, 1000000, 10000000 };
+        private static long[] tienThuong = {100000, 500000, 1000000, 10000000};
         
         public static long TienThuong(int viTri)
         {

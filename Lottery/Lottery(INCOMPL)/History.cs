@@ -49,8 +49,13 @@ namespace Lottery
             ShowVeBonSo(lotteryPos);
             ShowVeNamSo(lotteryPos);
             ShowVeSauSo(lotteryPos);
+
             if (lotteryPos < VeBaSo.historyVeBaSo.Count && lotteryPos >= 0)
                 lbDate.Text = VeBaSo.historyVeBaSo[lotteryPos].Date;
+            else if (lotteryPos == -1)
+                lbDate.Text = string.Empty;
+            
+            
         }
         private void ShowVeBaSo(int lotteryPos)
         {
@@ -60,6 +65,8 @@ namespace Lottery
                 lb12.Text = VeBaSo.historyVeBaSo[lotteryPos].So2.ToString();
                 lb13.Text = VeBaSo.historyVeBaSo[lotteryPos].So3.ToString();
             }
+            else if (lotPos == -1)
+                lb11.Text = lb12.Text = lb13.Text = string.Empty;
         }
         private void ShowVeBonSo(int lotteryPos)
         {
@@ -70,6 +77,8 @@ namespace Lottery
                 lb23.Text = VeBonSo.historyVeBonSo[lotteryPos].So3.ToString();
                 lb24.Text = VeBonSo.historyVeBonSo[lotteryPos].So4.ToString();
             }
+            else if (lotPos == -1)
+                lb21.Text = lb22.Text = lb23.Text = lb24.Text = string.Empty;
         }
         private void ShowVeNamSo(int lotteryPos)
         {
@@ -81,6 +90,8 @@ namespace Lottery
                 lb34.Text = VeNamSo.historyVeNamSo[lotteryPos].So4.ToString();
                 lb35.Text = VeNamSo.historyVeNamSo[lotteryPos].So5.ToString();
             }
+            else if (lotPos == -1)
+                lb31.Text = lb32.Text = lb33.Text = lb34.Text = lb35.Text = string.Empty;
         }
         private void ShowVeSauSo(int lotteryPos)
         {
@@ -93,6 +104,8 @@ namespace Lottery
                 lb45.Text = VeSauSo.historyVeSauSo[lotteryPos].So5.ToString();
                 lb46.Text = VeSauSo.historyVeSauSo[lotteryPos].So6.ToString();
             }
+            else if (lotPos == -1)
+                lb41.Text = lb42.Text = lb43.Text = lb44.Text = lb45.Text = lb46.Text = string.Empty;
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -116,6 +129,31 @@ namespace Lottery
         {
             playPos++;
             ShowPLayerNum(playPos);
+        }
+
+        private void btFind_Click(object sender, EventArgs e)
+        {
+            lotPos = -1;
+            DateTime date = dtDate.Value;
+            for(int i = 0; i < VeBaSo.historyVeBaSo.Count; i++)
+            {
+                DateTime hisDate = DateTime.Parse(VeBaSo.historyVeBaSo[i].Date);
+                if(date == hisDate)
+                {
+                    lotPos = i;
+                }
+            }
+            ShowVeSo(lotPos);
+        }
+
+        private void btClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

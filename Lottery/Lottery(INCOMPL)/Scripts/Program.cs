@@ -19,5 +19,9 @@ namespace Lottery
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+        public static void IncCurrentMoney(long money)
+        {
+            currentMoney += money;
+        }
     }
 }

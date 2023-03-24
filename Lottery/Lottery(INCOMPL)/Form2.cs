@@ -21,7 +21,7 @@ namespace Lottery
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            lbMoney.Text += GiaiThuong.FormatPrice(Program.currentMoney);
+            lbMoney.Text = "Tiền: " + GiaiThuong.FormatPrice(Program.currentMoney);
             lbDate.Text = DateTime.Today.ToString().Split(' ')[0];
         }
 
@@ -72,9 +72,6 @@ namespace Lottery
             PlayerNum playerNum = GetPlayerNumber();
             if (playerNum == null)
                 return;
-
-            //tăng giá giải thưởng
-            GiaiThuong.inc();
 
             VeBaSo ve3So = new VeBaSo();
             lb11.Text = ve3So.So1.ToString();
@@ -141,7 +138,13 @@ namespace Lottery
             {
                 FCongrat fCongrat = new FCongrat();
                 fCongrat.ShowDialog();
+                Program.IncCurrentMoney(GiaiThuong.GetTienThuongGiai(giai));
+                lbMoney.Text = "Tiền: " + GiaiThuong.FormatPrice(Program.currentMoney);
+                GiaiThuong.ResetTienThuong();
             }
+
+            //tăng giá giải thưởng
+            GiaiThuong.inc();
         }
 
         private void btRandomTicket_Click(object sender, EventArgs e)
