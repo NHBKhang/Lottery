@@ -29,6 +29,7 @@ namespace Lottery
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FHistory));
             this.lbMoney = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -395,7 +396,7 @@ namespace Lottery
             // 
             // btPNext
             // 
-            this.btPNext.BackgroundImage = global::Lottery.Properties.Resources.right;
+            this.btPNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btPNext.BackgroundImage")));
             this.btPNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btPNext.Location = new System.Drawing.Point(694, 50);
             this.btPNext.Name = "btPNext";
@@ -406,7 +407,7 @@ namespace Lottery
             // 
             // btPPrev
             // 
-            this.btPPrev.BackgroundImage = global::Lottery.Properties.Resources.left;
+            this.btPPrev.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btPPrev.BackgroundImage")));
             this.btPPrev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btPPrev.Location = new System.Drawing.Point(694, 16);
             this.btPPrev.Name = "btPPrev";
@@ -417,7 +418,7 @@ namespace Lottery
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::Lottery.Properties.Resources.right;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(637, 301);
             this.button2.Name = "button2";
@@ -428,7 +429,7 @@ namespace Lottery
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::Lottery.Properties.Resources.left;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(59, 301);
             this.button1.Name = "button1";
@@ -460,12 +461,13 @@ namespace Lottery
             // 
             // btFind
             // 
-            this.btFind.BackgroundImage = global::Lottery.Properties.Resources.Search;
+            this.btFind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btFind.BackgroundImage")));
             this.btFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btFind.Location = new System.Drawing.Point(724, 12);
             this.btFind.Name = "btFind";
             this.btFind.Size = new System.Drawing.Size(35, 35);
             this.btFind.TabIndex = 34;
+            this.btFind.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btFind.UseVisualStyleBackColor = true;
             this.btFind.Click += new System.EventHandler(this.btFind_Click);
             // 
